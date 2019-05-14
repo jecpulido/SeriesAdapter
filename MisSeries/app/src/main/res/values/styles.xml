@@ -8,4 +8,19 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red_400</item>
+        <item name="colorPrimaryDark">@color/red_900</item>
+        <item name="colorAccent">@color/grey_400</item>
+        <item name="android:textViewStyle">@color/white</item>
+        <item name="android:colorBackground">@color/grey_900</item>
+        <item name="android:colorForeground">@color/almost_white</item>
+    </style>
+
+    <style name="AppTheme3" parent="Theme.AppCompat.NoActionBar" >
+        <item name="colorPrimary">@color/red_400</item>
+        <item name="colorPrimaryDark">@color/red_900</item>
+        <item name="colorAccent">@color/grey_600</item>
+    </style>
 </resources>
