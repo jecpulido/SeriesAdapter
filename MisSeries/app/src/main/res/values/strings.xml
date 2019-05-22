@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MisSeries</string>
     <string name="title_main">Mis Series</string>
+    <string name="txt_recommended">Recomendadas</string>
 </resources>
