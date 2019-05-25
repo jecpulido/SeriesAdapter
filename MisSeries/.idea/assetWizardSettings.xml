@@ -19,8 +19,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\Jorge\Desktop\Profesores\Series\serie_10.png" />
-                                      <entry key="outputName" value="serie_10" />
+                                      <entry key="imageAsset" value="C:\Users\Jorge\Desktop\Profesores\Gestion\play.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -32,20 +31,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\Jorge\Desktop\Profesores\Series\serie_1.png" />
-                                      <entry key="outputName" value="serie1" />
-                                    </map>
-                                  </option>
-                                </PersistentState>
-                              </value>
-                            </entry>
-                            <entry key="notification">
-                              <value>
-                                <PersistentState>
-                                  <option name="values">
-                                    <map>
-                                      <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\Jorge\Desktop\Profesores\Series\serie_1.png" />
+                                      <entry key="imageAsset" value="C:\Users\Jorge\Desktop\Profesores\Gestion\play.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

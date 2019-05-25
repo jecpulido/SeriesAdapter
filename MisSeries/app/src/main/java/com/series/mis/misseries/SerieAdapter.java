@@ -43,18 +43,13 @@ public class SerieAdapter extends RecyclerView.Adapter<SerieAdapter.ViewHolderSe
             @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onClick(View v) {
-                Transition transition = new Slide(Gravity.LEFT);
+                Transition transition = new Slide(Gravity.TOP);
                 transition.setDuration(1000);
                 transition.setInterpolator(new DecelerateInterpolator());
                 ((MainActivity) vContext).getWindow().setExitTransition(transition);
                 Intent intent = new Intent(vContext,DetailActivity.class);
-                vContext.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation((MainActivity)vContext).toBundle());
-
-                /*
-                Intent intent = new Intent(vContext, DetailActivity.class);
                 intent.putExtra("serie",serie);
-                vContext.startActivity(intent);
-                */
+                vContext.startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation((MainActivity)vContext).toBundle());
             }
         });
     }

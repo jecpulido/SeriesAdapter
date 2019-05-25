@@ -2,4 +2,10 @@
     <string name="app_name">MisSeries</string>
     <string name="title_main">Mis Series</string>
     <string name="txt_recommended">Recomendadas</string>
+    <string name="txt_duracion">5min</string>
+    <string name="txt_title_episode">Episodio 1: El inicio</string>
+    <string name="txt_sipnosis">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown
+        printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="title_episodes">Episodio</string>
 </resources>

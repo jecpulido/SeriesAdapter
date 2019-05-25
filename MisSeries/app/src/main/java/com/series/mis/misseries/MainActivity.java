@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         lstSeries.add(new Serie("Stranger Things",R.drawable.serie_8));
         lstSeries.add(new Serie("Vikingos",R.drawable.serie_9));
         lstSeries.add(new Serie("The Walking Dead",R.drawable.serie_10));
+
     }
 
 

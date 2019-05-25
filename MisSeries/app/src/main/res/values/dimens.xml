@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_card">3dp</dimen>
+    <dimen name="margin_card_episode">5dp</dimen>
     <dimen name="elevation_card">4dp</dimen>
     <dimen name="radius_card">0dp</dimen>
     <dimen name="height_image_serie">180dp</dimen>
     <dimen name="backdrop_title">30dp</dimen>
     <dimen name="backdrop_subtitle">18dp</dimen>
+    <dimen name="dimen_image_episode">80dp</dimen>
 </resources>

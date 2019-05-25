@@ -32,15 +32,13 @@ class DetailSerie implements Serializable{
 
     private String name;
     private String synopsis;
-    private String season;
-    private String recomendation;
+    private String duracion;
     private int image;
 
-    public DetailSerie(String name, String synopsis, String season, String recomendation, int image) {
+    public DetailSerie(String name, String synopsis, String duracion, int image) {
         this.name = name;
         this.synopsis = synopsis;
-        this.season = season;
-        this.recomendation = recomendation;
+        this.duracion = duracion;
         this.image = image;
     }
 
@@ -60,20 +58,12 @@ class DetailSerie implements Serializable{
         this.synopsis = synopsis;
     }
 
-    public String getSeason() {
-        return season;
+    public String getDuracion() {
+        return duracion;
     }
 
-    public void setSeason(String season) {
-        this.season = season;
-    }
-
-    public String getRecomendation() {
-        return recomendation;
-    }
-
-    public void setRecomendation(String recomendation) {
-        this.recomendation = recomendation;
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
     }
 
     public int getImage() {
