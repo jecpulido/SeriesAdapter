@@ -2,6 +2,7 @@ package com.series.mis.misseries;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -10,6 +11,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -21,7 +23,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class DetailActivity extends AppCompatActivity {
+public class DetailActivity extends AppCompatActivity implements EpisodeFragment.OnFragmentInteractionListener {
 
     public TextView summary,title,subtitle;
     public Spinner season;
@@ -112,4 +114,10 @@ public class DetailActivity extends AppCompatActivity {
         recycler.setItemAnimator(new DefaultItemAnimator());
         recycler.setAdapter(adapter);
     }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+
 }

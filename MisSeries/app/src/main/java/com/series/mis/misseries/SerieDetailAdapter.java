@@ -4,6 +4,8 @@ package com.series.mis.misseries;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -14,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,6 +27,7 @@ public class SerieDetailAdapter extends RecyclerView.Adapter<SerieDetailAdapter.
 
     public ArrayList<DetailSerie> lstRequest;
     public Context vContext;
+    private FrameLayout fragmentContainer;
 
     public SerieDetailAdapter(ArrayList<DetailSerie> lstRequest, Context vContext) {
         this.lstRequest = lstRequest;
@@ -44,6 +48,22 @@ public class SerieDetailAdapter extends RecyclerView.Adapter<SerieDetailAdapter.
         viewHolderDetail.time.setText(detailSerie.getDuracion());
         viewHolderDetail.title.setText(detailSerie.getName());
         viewHolderDetail.sipnosis.setText(detailSerie.getSynopsis());
+        fragmentContainer = (FrameLayout) ((DetailActivity)vContext).findViewById(R.id.fragment_detail);
+        viewHolderDetail.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFragment(detailSerie);
+            }
+        });
+    }
+
+    public void openFragment(DetailSerie serie) {
+        EpisodeFragment fragment = EpisodeFragment.newInstance(serie);
+        FragmentManager fragmentManager = ((DetailActivity)vContext).getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_right, R.anim.enter_from_right, R.anim.exit_to_right);
+        transaction.addToBackStack(null);
+        transaction.replace(R.id.fragment_detail, fragment, "BLANK_FRAGMENT").commit();
     }
 
     @Override
